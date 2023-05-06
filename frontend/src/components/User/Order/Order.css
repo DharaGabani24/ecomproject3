@@ -1,0 +1,45 @@
+.button-cancel{
+    background-color: #000;
+    color: #fff;
+    margin-bottom: 13px;
+}
+
+
+.order-btn button{
+    border: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    background-color: #000;
+    color: #fff;
+    font-size: 16px;
+}
+
+@media only screen and (max-width: 320px) {
+    .order-box {
+        display: flex;
+        justify-content: center;
+    }
+  }
+
+
+@media only screen and (max-width: 425px) {
+    .order-box {
+        padding: 0px;
+        display: flex;
+        justify-content: center;
+    }
+    .order-btn{
+        display: flex;
+        justify-content: center;
+    }
+
+    .order-btn button{
+        margin-left: 2px;
+    }
+
+    .order-box img {
+        height: 220px;
+        width: 220px;
+    }
+
+}

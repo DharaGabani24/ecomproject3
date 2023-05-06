@@ -1,0 +1,140 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"); */
+  @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&family=Mukta:wght@200;300;400;800&family=Roboto:wght@300;500&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Jost", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
+.navbar{
+  display: flex;
+  box-shadow: 0 4px 4px 0 rgb(25, 25, 109);
+
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+  color: white;
+  align-self: center;
+  background-image: linear-gradient(#d4cbf0, #faaca8);
+
+  /* background-image: linear-gradient( lightblue, #ffc3a0); */
+  /* #ddd6f3 → #faaca8 */
+  /* background-image: linear-gradient( #ffafbd,#ffc3a0); */
+}
+.logo {
+  font-size: 30px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.logo img{
+  margin-bottom: 20px;
+}
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+  width: 75%;
+  align-items: center;
+}
+
+.nav-links li {
+  color:black;
+  font-size: 20px;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  text-transform: capitalize;
+  font-weight:500;
+
+}
+.mobile-menu-icon {
+  display: none;
+  color: white;
+}
+button {
+  border: none;
+  text-decoration: none;
+  font-size: 20px;
+  background: none;
+}
+.text{
+  /* background-color:#ffc3a0; */
+  box-shadow: 5px 9px #c0b5e2;
+  border-radius: 4px;
+  font-size: 22px;
+  font-family:'Jost'
+
+
+}
+.text:hover{
+  color:rgb(25, 25, 109);
+  background-color:#FFAEBC;
+  
+  box-shadow: 5px 10px #35b5c9;
+
+}
+
+
+@media (max-width: 768px) {
+  .logo {
+    display: flex;
+    position: absolute;
+    top: 15px;
+    left: 35px;
+  }
+  .nav-links {
+    display: none;
+  }
+  
+  .icon{
+    color: black; /* default color */
+  }
+  
+  .icon:hover {
+    color: #e9dd37; /* color on hover */
+  }
+  .icon2{
+    color: black; /* default color */
+  }
+  
+  .icon2:hover {
+    color: #e9dd37; /* color on hover */
+  }
+
+ 
+  .nav-links-mobile {
+    position: absolute;
+    display: block;
+    list-style: none;
+    left: 0;
+    top: 100%;
+    transition: all .5s ease-in-out;
+    width: 100%;
+    /* background-color: black; */
+    background-image: linear-gradient( #ffafbd,#ffc3a0);
+
+    
+  }
+  ul li {
+    padding: 10px;
+    width: 100%;
+    transition: all .5s ease-in-out;
+    text-align: center;
+    color: white;
+  }
+  .mobile-menu-icon {
+    position: absolute;
+    display: block;
+    right: 20px;
+  }
+  .hero h1 {
+    font-size: 50px;
+  }
+}

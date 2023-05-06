@@ -1,0 +1,112 @@
+.gallery {
+    --s: 280px;
+    --d: 15s;
+    display: grid;
+    width: var(--s);
+    aspect-ratio: 1;
+    overflow: hidden;
+    padding: calc(var(--s) / 20);
+    border-radius: 50%;
+    position: relative;
+    clip-path: circle(49.5%);
+  }
+  
+  .gallery::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: inherit;
+    border-radius: inherit;
+    background: repeating-conic-gradient(#789048 0 30deg, #DFBA69 0 60deg);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+  }
+  
+  .gallery > img {
+    grid-area: 1/1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+    transform-origin: 50% calc(50% / sin(180deg / 9 + 50%));
+  }
+  
+  .gallery::after,
+  .gallery > img {
+    animation: m var(--d) infinite cubic-bezier(.5, -0.2, .5, 1.2);
+  }
+  
+  .gallery > img:nth-child(2) {
+    animation-delay: calc((1 - 2 / 9) * var(--d));
+  }
+  
+  .gallery > img:nth-child(3) {
+    animation-delay: calc((1 - 3 / 9) * var(--d));
+  }
+  
+  .gallery > img:nth-child(4) {
+    animation-delay: calc((1 - 4 / 9) * var(--d));
+  }
+  
+  .gallery > img:nth-child(5) {
+    animation-delay: calc((1 - 5 / 9) * var(--d));
+  }
+  
+  .gallery > img:nth-child(6) {
+    animation-delay: calc((1 - 6 / 9) * var(--d));
+  }
+  
+  .gallery > img:nth-child(7) {
+    animation-delay: calc((1 - 7 / 9) * var(--d));
+  }
+  
+  .gallery > img:nth-child(8) {
+    animation-delay: calc((1 - 8 / 9) * var(--d));
+  }
+  
+  .gallery > img:nth-child(9) {
+    animation-delay: calc((1 - 9 / 9) * var(--d));
+  }
+  
+  @keyframes m {
+    0%, 3% {
+      transform: rotate(0);
+    }
+    
+    15.55556%, 18% {
+      transform: rotate(-40deg);
+    }
+    
+    31.11111%, 33% {
+      transform: rotate(-80deg);
+    }
+    
+    46.66667%, 48% {
+      transform: rotate(-120deg);
+    }
+    
+    62.22222%, 63% {
+      transform: rotate(-160deg);
+    }
+    
+    77.77778%, 79% {
+      transform: rotate(-200deg);
+    }
+    
+    93.33333%, 95% {
+      transform: rotate(-240deg);
+    }
+    
+    98%, 100% {
+      transform: rotate(-360deg);
+    }
+  }
+  
+  body {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    background: #C2CBCE;
+  }

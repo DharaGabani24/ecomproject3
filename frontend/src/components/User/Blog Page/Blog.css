@@ -1,0 +1,31 @@
+.buy-now{
+    color: #fff;
+    min-width: 150px;
+    font-size: 16px;
+    background: #000 !important;
+    border: none;
+    position: absolute;
+    right: 10%;
+    border-radius: 0px;
+    margin: 0 0 30px 0;
+  }
+  .btn-primary:active{
+    color: #fff;
+    min-width: 150px;
+    font-size: 16px;
+    background: #000 !important;
+    border: none;
+  }
+  .btn-primary:hover{
+    background: #000 !important; 
+  }
+  .btn-read{
+    text-transform: uppercase;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    border: 1px solid black;
+    color: #000;
+  }
+  .btn-read:hover{
+    background-color: #000;
+    
+  }

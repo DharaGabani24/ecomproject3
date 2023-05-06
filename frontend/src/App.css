@@ -1,0 +1,17 @@
+.App {
+  text-align: center;
+
+}
+h6{
+  margin: 0px;
+  padding-right: 10px;
+}
+body{
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+
+}
+::selection {
+  background-color: #000;
+  color: #fff;
+}

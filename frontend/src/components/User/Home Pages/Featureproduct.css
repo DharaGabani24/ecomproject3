@@ -1,0 +1,74 @@
+
+ @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&family=Mukta:wght@200;300;400;800&family=Roboto:wght@300;500&display=swap');
+
+@media only screen and (max-width: 320px) {
+    .btn-shop {
+        font-size: 15px;
+    }
+  }
+
+/* .proText{
+
+    font-family: 'Jost', sans-serif;
+} */
+.text-center .proText{
+    font-family: 'Jost', sans-serif;
+    font-weight:400;
+}
+.producttext{
+    font-family: 'Jost', sans-serif;
+
+}
+.btn-m{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2px;
+    margin-bottom: 5px;
+}
+.btn-m button{
+    padding: 0 25px 0 25px;
+    color: white;
+    border-radius: 5px;
+    background-color: black;
+    /* width: 50%; */
+
+}
+/* .btn-shop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+.btn-products{
+    width: 140px;
+    height: 30px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    margin: 3px;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 4px;
+    transition: all 0.8s ease;
+
+  }
+
+  .btn-products:hover{
+      background-color: #fff;
+      color: #000;
+      border: 2px solid #000;
+      
+  }
+
+.btn-products-vd{
+    width: 140px;
+    height: 30px;
+    background-color: white;
+    color: #000;
+    border: 2px solid black;
+    margin: 3px;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 4px;
+    transition: all 2s ease;
+  }
